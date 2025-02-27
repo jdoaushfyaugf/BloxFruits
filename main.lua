@@ -34,9 +34,9 @@ local Blox Fruits = Rayfield:CreateWindow({
    }
 })
 
-local PlayerTab = Blox Fruits:CreateTab("Misc", 0)
+local MainTab = Window:CreateTab("Misc", 4483362458)
 
-local Slider = PlayerTab:CreateSlider({
+local Slider = MainTab:CreateSlider({
     Name = "Dash length",
     Range = {10, 1000},
     Increment = 1,
