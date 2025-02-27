@@ -33,3 +33,17 @@ local Blox Fruits = Rayfield:CreateWindow({
       Key = {"https://pastebin.com/raw/GJXD8xaX"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
    }
 })
+
+local PlayerTab = Window:CreateTab("Misc", 0)
+
+local Slider = PlayerTab:CreateSlider({
+    Name = "WalkSpeed",
+    Range = {1, 10},
+    Increment = 1,
+    Suffix = "Speed",
+    CurrentValue = 10,
+    Flag = "Slider1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+    Callback = function(Value)
+     game.Players.LocalPlayer.Character:SetAttribute("SpeedMultiplier", Value)
+    end,
+ })
