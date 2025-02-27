@@ -34,7 +34,7 @@ local Blox Fruits = Rayfield:CreateWindow({
    }
 })
 
-local PlayerTab = Window:CreateTab("Misc", 0)
+local PlayerTab = Blox Fruits:CreateTab("Misc", 0)
 
 local Slider = PlayerTab:CreateSlider({
     Name = "WalkSpeed",
